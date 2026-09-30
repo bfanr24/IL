@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pluvo — Daur Ulang Jadi Lebih Bernilai | Download App</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: {
+              DEFAULT: '#0D3B26',
+              deep: '#071F15',
+              card: '#163A2B',
+              light: '#1E5B3D',
+              accent: '#34D399',
+              tint: '#E5F8ED'
+            },
+            cream: {
+              DEFAULT: '#FAF9F5',
+              dark: '#F0ECE1',
+              card: '#FFFFFF'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Outfit', '"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['Fraunces', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF9F5;
+      color: #142116;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 30%, rgba(52, 211, 153, 0.14) 0%, rgba(13, 59, 38, 0.04) 50%, transparent 75%);
+    }
+    .phone-shadow {
+      box-shadow: 0 25px 60px -15px rgba(13, 59, 38, 0.28), 0 0 0 10px #1E2922, 0 0 0 12px #2D3A32;
+    }
+  </style>
+</head>
+<body class="selection:bg-forest selection:text-white">
+
+  <!-- TOP PROMO BANNER -->
+  <div class="bg-forest text-forest-tint text-xs sm:text-sm py-2 px-4 text-center font-medium flex items-center justify-center gap-2">
+    <span>🌱</span>
+    <span><strong>Pluvo Mobile App</strong> kini resmi tersedia untuk Android &amp; iOS. Setor botol plastik dan tukar jadi voucher belanja.</span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-0 z-40 bg-[#FAF9F5]/95 backdrop-blur-md border-b border-[#EBE6DC] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="#" class="flex items-center gap-2.5">
+          <img src="/pulvo.png" alt="Pluvo" class="h-10 sm:h-11 w-auto object-contain" />
+        </a>
+      </div>
+
+      <div class="hidden md:flex items-center gap-8 font-semibold text-sm text-[#3E4D42]">
+        <a href="#fitur" class="hover:text-forest transition-colors">Fitur Utama</a>
+        <a href="#voucher" class="hover:text-forest transition-colors">Voucher &amp; Hadiah</a>
+        <a href="#cara-kerja" class="hover:text-forest transition-colors">Cara Kerja</a>
+        <a href="#lokasi" class="hover:text-forest transition-colors">Titik RVM</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="#download" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-forest hover:bg-forest-light text-white font-bold text-xs sm:text-sm shadow-sm transition-all active:scale-95">
+          <svg class="w-4 h-4 text-emerald-300" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          <span>Download App</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION WITH PHONE MOCKUP -->
+  <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden hero-glow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- LEFT: HERO HEADLINE & DOWNLOAD BUTTONS -->
+        <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
+          
+          <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl text-[#0A2618] tracking-tight leading-[1.06]">
+            Daur ulang botol,<br />
+            kantongi <span class="text-forest relative inline-block">
+              voucher belanja
+              <svg class="absolute -bottom-2 left-0 w-full text-emerald-400" viewBox="0 0 300 12" fill="none"><path d="M2 9C70 3 230 3 298 9" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-[#4A5D4F] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            Setor botol plastik bekasmu di stasiun <strong>Reverse Vending Machine (RVM) Pluvo</strong>, kumpulkan poin secara instan, dan tukarkan langsung dengan voucher belanja <strong>Indomaret</strong>, <strong>Alfamart</strong>, serta produk gaya hidup daur ulang ramah lingkungan.
+          </p>
+
+          <!-- DUAL DOWNLOAD BUTTONS (ANDROID & IOS) -->
+          <div id="download" class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-4">
+            
+            <!-- DOWNLOAD ANDROID BUTTON -->
+            <a href="/Pluvo.apk" download="Pluvo.apk" class="group relative flex items-center gap-4 px-6 py-4 rounded-2xl bg-forest hover:bg-forest-light text-white font-bold text-left shadow-lg hover:shadow-xl transition-all duration-200 active:scale-[0.98]">
+              <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <!-- ANDROID OFFICIAL SVG LOGO -->
+                <svg class="w-6 h-6 text-[#3DDC84]" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9993.4482.9993.9993.0001.5511-.4483.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9993.4482.9993.9993 0 .5511-.4483.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.4116 13.8533 8.0827 12 8.0827s-3.5902.3289-5.1368.867L4.8409 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-[11px] uppercase tracking-wider text-forest-tint block font-medium">Unduh Berkas APK</span>
+                <span class="text-base sm:text-lg font-extrabold text-white block leading-tight">Download Android</span>
+                <span class="text-[10px] text-emerald-300 block font-normal mt-0.5">v1.0 • APK 40 MB</span>
+              </div>
+              <svg class="w-5 h-5 ml-auto text-emerald-300 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            </a>
+
+            <!-- DOWNLOAD IOS BUTTON -->
+            <button type="button" onclick="openIosModal()" class="group relative flex items-center gap-4 px-6 py-4 rounded-2xl bg-white hover:bg-[#F2ECE1] border-2 border-forest text-forest font-bold text-left shadow-lg hover:shadow-xl transition-all duration-200 active:scale-[0.98]">
+              <div class="w-10 h-10 rounded-xl bg-forest-tint flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <!-- APPLE OFFICIAL SVG LOGO -->
+                <svg class="w-6 h-6 text-forest" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.85-.9.04-2.02.61-2.66 1.36-.56.65-1.06 1.71-.93 2.73 1.01.08 2.06-.49 2.67-1.24z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-[11px] uppercase tracking-wider text-[#68776B] block font-medium">Instalasi iPhone / iPad</span>
+                <span class="text-base sm:text-lg font-extrabold text-forest block leading-tight">Download iOS</span>
+                <span class="text-[10px] text-emerald-700 block font-normal mt-0.5">iOS 14+ • WebClip &amp; PWA</span>
+              </div>
+              <svg class="w-5 h-5 ml-auto text-forest group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT: PHONE MOCKUP SHOWCASING EXACT WELCOME SCREEN -->
+        <div class="lg:col-span-5 flex justify-center">
+          
+          <!-- REALISTIC PHONE CONTAINER -->
+          <div class="relative w-[295px] sm:w-[325px] h-[610px] sm:h-[670px] bg-[#FAF9F5] rounded-[50px] phone-shadow overflow-hidden border-[4px] border-[#37493F]">
+            
+            <!-- DYNAMIC ISLAND / SPEAKER -->
+            <div class="absolute top-3 left-1/2 -translate-x-1/2 w-28 h-5 bg-black rounded-full z-30 flex items-center justify-center">
+              <div class="w-2.5 h-2.5 rounded-full bg-[#18231E] ml-auto mr-3"></div>
+            </div>
+
+            <!-- EXACT APP WELCOME SCREEN (MATCHING PLUVO APP AUTH HERO) -->
+            <div class="w-full h-full bg-[#FAF9F5] pt-11 pb-5 px-3.5 flex flex-col justify-between select-none">
+              
+              <!-- TOP HERO CARD -->
+              <div class="relative w-full flex-1 rounded-[28px] overflow-hidden bg-[#FAF9F5] mb-2.5 flex flex-col justify-center border border-[#EBE6DC]/80 shadow-xs">
+                
+                <!-- BACKGROUND HERO ARTWORK -->
+                <img src="/auth_hero_generated.png" alt="Pluvo Daur Ulang" class="absolute right-0 top-0 h-full w-[68%] object-cover object-right pointer-events-none z-[1]" />
+                
+                <!-- GRADIENTS -->
+                <div class="absolute inset-0 bg-gradient-to-r from-[#FAF9F5] via-[#FAF9F5]/75 via-42% to-transparent z-[2] pointer-events-none"></div>
+                <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-[#FAF9F5] via-[#FAF9F5]/40 to-transparent pointer-events-none z-10"></div>
+                
+                <!-- CONTENT -->
+                <div class="relative z-10 h-full flex flex-col justify-center py-4 pl-3.5 pr-1 w-[68%] space-y-3">
+                  <div class="flex items-center">
+                    <img src="/pulvo.png" alt="Pluvo" class="h-9 sm:h-10 w-auto object-contain" />
+                  </div>
+                  <div class="py-1">
+                    <h2 class="font-display font-extrabold text-[27px] sm:text-[31px] text-[#0A2618] tracking-[-0.045em] leading-[1.03]">
+                      Daur<br />
+                      ulang<br />
+                      jadi lebih<br />
+                      <span class="text-[#15803D]">bernilai.</span>
+                    </h2>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- WELCOME SCREEN ACTION BUTTONS -->
+              <div class="relative z-10 space-y-2 px-0.5">
+                <button type="button" class="w-full py-3.5 px-5 rounded-[18px] bg-[#0D3B26] hover:bg-[#164D32] text-white font-bold text-xs sm:text-sm shadow-xs transition-all flex items-center justify-center gap-2 active:scale-[0.98]">
+                  <span>Masuk</span>
+                  <span class="text-sm">→</span>
+                </button>
+                <button type="button" class="w-full py-3.5 px-5 rounded-[18px] bg-white hover:bg-[#FAF9F5] border-2 border-[#0D3B26] text-[#0D3B26] font-bold text-xs sm:text-sm shadow-xs transition-all flex items-center justify-center gap-2 active:scale-[0.98]">
+                  <span>Buat Akun</span>
+                  <span class="text-sm">→</span>
+                </button>
+                <div class="text-[10px] text-[#506053] text-center pt-1 leading-relaxed">
+                  <p>Dengan melanjutkan, Anda menyetujui</p>
+                  <p class="mt-0.5">
+                    <span class="underline font-semibold text-[#0D3B26]">Syarat &amp; Ketentuan</span> dan <span class="underline font-semibold text-[#0D3B26]">Kebijakan Privasi</span> Pluvo.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REWARDS / PRODUCTS SECTION -->
+  <section id="voucher" class="py-20 bg-white border-y border-[#EBE6DC]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-emerald-700 bg-forest-tint px-3 py-1 rounded-full border border-forest/15">
+          Katalog Hadiah &amp; Produk
+        </span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-[#0A2618]">
+          Tukarkan Poin Jadi Voucher &amp; Produk Daur Ulang
+        </h2>
+        <p class="text-sm sm:text-base text-[#506053]">
+          Kumpulkan poin dari setoran botol plastik PET Anda di mesin RVM Pluvo, lalu tukarkan langsung di aplikasi dengan voucher belanja resmi atau produk daur ulang berkualitas.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- BAG 1: TAS RAJUT RPET -->
+        <div class="rounded-3xl bg-[#FAF9F5] border border-[#EBE6DC] p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col justify-between group">
+          <div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-white border border-[#EBE6DC] mb-4">
+              <img src="/product_knit_bag.jpg" alt="Tas Jinjing Rajut rPET" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+            </div>
+            <span class="text-[10px] font-bold text-emerald-800 bg-[#E5F8ED] px-2.5 py-0.5 rounded-full inline-block mb-1">100% rPET Eco Fashion</span>
+            <h3 class="font-bold text-base text-[#142116] leading-snug">Tas Jinjing Rajut rPET</h3>
+            <p class="text-xs text-[#68776B] mt-1 line-clamp-2">Bahan 100% serat botol daur ulang. Kapasitas 12kg, jahitan ganda dan ramah lingkungan.</p>
+          </div>
+          <div class="pt-4 border-t border-[#EBE6DC] mt-4 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-[#8C988E] line-through block">Rp 45.000</span>
+              <span class="text-base font-extrabold text-forest">Rp 31.500</span>
+            </div>
+            <span class="text-xs font-bold text-forest bg-forest-tint px-3 py-1.5 rounded-xl border border-forest/15">
+              180 Poin
+            </span>
+          </div>
+        </div>
+
+        <!-- BAG 2: TOTE BAG KANVAS -->
+        <div class="rounded-3xl bg-[#FAF9F5] border border-[#EBE6DC] p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col justify-between group">
+          <div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-white border border-[#EBE6DC] mb-4">
+              <img src="/product_tote_canvas.jpg" alt="Tote Bag Kanvas Daur Ulang 18L" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+            </div>
+            <span class="text-[10px] font-bold text-emerald-800 bg-[#E5F8ED] px-2.5 py-0.5 rounded-full inline-block mb-1">rPET Canvas 18L</span>
+            <h3 class="font-bold text-base text-[#142116] leading-snug">Tote Bag Kanvas Daur Ulang 18L</h3>
+            <p class="text-xs text-[#68776B] mt-1 line-clamp-2">Kombinasi katun daur ulang dan rPET. Kompartemen laptop 14 inci dengan bantalan.</p>
+          </div>
+          <div class="pt-4 border-t border-[#EBE6DC] mt-4 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-[#8C988E] line-through block">Rp 65.000</span>
+              <span class="text-base font-extrabold text-forest">Rp 45.500</span>
+            </div>
+            <span class="text-xs font-bold text-forest bg-forest-tint px-3 py-1.5 rounded-xl border border-forest/15">
+              260 Poin
+            </span>
+          </div>
+        </div>
+
+        <!-- VOUCHER 1: INDOMARET 25K -->
+        <div class="rounded-3xl bg-[#FAF9F5] border border-[#EBE6DC] p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col justify-between group">
+          <div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-white border border-[#EBE6DC] mb-4">
+              <img src="/voucher_indomaret.jpg" alt="Voucher Indomaret" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+            </div>
+            <span class="text-[10px] font-bold text-emerald-800 bg-[#E5F8ED] px-2.5 py-0.5 rounded-full inline-block mb-1">Voucher Resmi</span>
+            <h3 class="font-bold text-base text-[#142116] leading-snug">Voucher Indomaret Rp 25.000</h3>
+            <p class="text-xs text-[#68776B] mt-1 line-clamp-2">Potongan belanja instan di kasir Indomaret untuk sembako dan kebutuhan harian.</p>
+          </div>
+          <div class="pt-4 border-t border-[#EBE6DC] mt-4 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-[#8C988E] line-through block">Rp 25.000</span>
+              <span class="text-base font-extrabold text-forest">Rp 15.000</span>
+            </div>
+            <span class="text-xs font-bold text-forest bg-forest-tint px-3 py-1.5 rounded-xl border border-forest/15">
+              120 Poin
+            </span>
+          </div>
+        </div>
+
+        <!-- VOUCHER 2: ALFAMART 25K -->
+        <div class="rounded-3xl bg-[#FAF9F5] border border-[#EBE6DC] p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col justify-between group">
+          <div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-white border border-[#EBE6DC] mb-4">
+              <img src="/voucher_alfamart.jpg" alt="Voucher Alfamart" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+            </div>
+            <span class="text-[10px] font-bold text-emerald-800 bg-[#E5F8ED] px-2.5 py-0.5 rounded-full inline-block mb-1">Voucher Resmi</span>
+            <h3 class="font-bold text-base text-[#142116] leading-snug">Voucher Alfamart Rp 25.000</h3>
+            <p class="text-xs text-[#68776B] mt-1 line-clamp-2">Belanja lebih hemat kebutuhan dapur dan keluarga di seluruh gerai Alfamart.</p>
+          </div>
+          <div class="pt-4 border-t border-[#EBE6DC] mt-4 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-[#8C988E] line-through block">Rp 25.000</span>
+              <span class="text-base font-extrabold text-forest">Rp 15.000</span>
+            </div>
+            <span class="text-xs font-bold text-forest bg-forest-tint px-3 py-1.5 rounded-xl border border-forest/15">
+              120 Poin
+            </span>
+          </div>
+        </div>
+
+        <!-- VOUCHER 3: INDOMARET 50K -->
+        <div class="rounded-3xl bg-[#FAF9F5] border border-[#EBE6DC] p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col justify-between group">
+          <div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-white border border-[#EBE6DC] mb-4">
+              <img src="/voucher_indomaret.jpg" alt="Voucher Indomaret" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+            </div>
+            <span class="text-[10px] font-bold text-emerald-800 bg-[#E5F8ED] px-2.5 py-0.5 rounded-full inline-block mb-1">Nilai Terbaik</span>
+            <h3 class="font-bold text-base text-[#142116] leading-snug">Voucher Indomaret Rp 50.000</h3>
+            <p class="text-xs text-[#68776B] mt-1 line-clamp-2">Solusi belanja bulanan hemat dengan apresiasi botol plastik daur ulang.</p>
+          </div>
+          <div class="pt-4 border-t border-[#EBE6DC] mt-4 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-[#8C988E] line-through block">Rp 50.000</span>
+              <span class="text-base font-extrabold text-forest">Rp 30.000</span>
+            </div>
+            <span class="text-xs font-bold text-forest bg-forest-tint px-3 py-1.5 rounded-xl border border-forest/15">
+              250 Poin
+            </span>
+          </div>
+        </div>
+
+        <!-- VOUCHER 4: ALFAMART 50K -->
+        <div class="rounded-3xl bg-[#FAF9F5] border border-[#EBE6DC] p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col justify-between group">
+          <div>
+            <div class="aspect-square rounded-2xl overflow-hidden bg-white border border-[#EBE6DC] mb-4">
+              <img src="/voucher_alfamart.jpg" alt="Voucher Alfamart" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+            </div>
+            <span class="text-[10px] font-bold text-emerald-800 bg-[#E5F8ED] px-2.5 py-0.5 rounded-full inline-block mb-1">Nilai Terbaik</span>
+            <h3 class="font-bold text-base text-[#142116] leading-snug">Voucher Alfamart Rp 50.000</h3>
+            <p class="text-xs text-[#68776B] mt-1 line-clamp-2">Tukarkan poin daur ulang untuk potongan belanja di seluruh jaringan Alfamart.</p>
+          </div>
+          <div class="pt-4 border-t border-[#EBE6DC] mt-4 flex items-center justify-between">
+            <div>
+              <span class="text-[10px] text-[#8C988E] line-through block">Rp 50.000</span>
+              <span class="text-base font-extrabold text-forest">Rp 30.000</span>
+            </div>
+            <span class="text-xs font-bold text-forest bg-forest-tint px-3 py-1.5 rounded-xl border border-forest/15">
+              250 Poin
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS SECTION -->
+  <section id="cara-kerja" class="py-20 bg-[#FAF9F5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-widest text-emerald-700 bg-forest-tint px-3 py-1 rounded-full border border-forest/15">
+          Alur Penggunaan
+        </span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-[#0A2618]">
+          Cara Kerja Pluvo
+        </h2>
+        <p class="text-sm sm:text-base text-[#506053]">
+          3 langkah mudah dari botol plastik bekas hingga voucher belanja.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- STEP 1 -->
+        <div class="p-8 rounded-3xl bg-white border border-[#EBE6DC] shadow-xs space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-forest-tint flex items-center justify-center text-forest font-black text-2xl font-display">
+            01
+          </div>
+          <h3 class="font-display font-bold text-xl text-[#0A2618]">Kumpulkan Botol Plastik</h3>
+          <p class="text-sm text-[#506053] leading-relaxed">
+            Kumpulkan botol plastik PET bersih ukuran kecil (330ml - 600ml) atau besar (1.5L) dari konsumsi harianmu.
+          </p>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="p-8 rounded-3xl bg-white border border-[#EBE6DC] shadow-xs space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-forest-tint flex items-center justify-center text-forest font-black text-2xl font-display">
+            02
+          </div>
+          <h3 class="font-display font-bold text-xl text-[#0A2618]">Setor di Stasiun RVM</h3>
+          <p class="text-sm text-[#506053] leading-relaxed">
+            Kunjungi stasiun RVM Pluvo terdekat (Sudirman, Blok M, Rasuna, dll.), scan QR stasiun lewat aplikasi, dan masukkan botol ke mesin.
+          </p>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="p-8 rounded-3xl bg-white border border-[#EBE6DC] shadow-xs space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-forest-tint flex items-center justify-center text-forest font-black text-2xl font-display">
+            03
+          </div>
+          <h3 class="font-display font-bold text-xl text-[#0A2618]">Tukarkan Voucher</h3>
+          <p class="text-sm text-[#506053] leading-relaxed">
+            Poin langsung masuk ke akun Pluvo Anda secara real-time. Pilih voucher Indomaret atau Alfamart favoritmu dan gunakan langsung di kasir.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA DOWNLOAD BANNER -->
+  <section class="py-16 bg-forest text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="bg-forest-card rounded-3xl border border-white/10 p-8 sm:p-12 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+        <div class="space-y-3 max-w-xl">
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white">
+            Mulai daur ulang botolmu hari ini
+          </h2>
+          <p class="text-forest-tint text-sm sm:text-base">
+            Unduh aplikasi resmi Pluvo untuk smartphone Android atau iOS Anda.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-4">
+          <a href="/Pluvo.apk" download="Pluvo.apk" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-white text-forest font-extrabold text-sm flex items-center justify-center gap-3 shadow-lg hover:bg-forest-tint transition-all active:scale-95">
+            <svg class="w-5 h-5 text-forest" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9993.4482.9993.9993.0001.5511-.4483.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9993.4482.9993.9993 0 .5511-.4483.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.4116 13.8533 8.0827 12 8.0827s-3.5902.3289-5.1368.867L4.8409 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/>
+            </svg>
+            <span>Download Android</span>
+          </a>
+          <button type="button" onclick="openIosModal()" class="w-full sm:w-auto px-7 py-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-extrabold text-sm flex items-center justify-center gap-3 transition-all active:scale-95">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.85-.9.04-2.02.61-2.66 1.36-.56.65-1.06 1.71-.93 2.73 1.01.08 2.06-.49 2.67-1.24z"/>
+            </svg>
+            <span>Download iOS</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (CRISP AUTHENTIC LOGO, LIGHT CLEAN BACKGROUND) -->
+  <footer class="py-10 bg-[#FAF9F5] border-t border-[#EBE6DC] text-[#506053] text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img src="/pulvo.png" alt="Pluvo" class="h-9 w-auto object-contain" />
+        <span class="text-[#D1D8D3]">|</span>
+        <span class="font-medium text-[#506053]">Aplikasi Daur Ulang Ramah Lingkungan</span>
+      </div>
+      <div>
+        <p class="font-medium">© 2026 Pluvo (com.ecopoin.app). Hak cipta dilindungi undang-undang.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- IOS INSTALLATION MODAL -->
+  <div id="iosModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 space-y-6 shadow-2xl border border-[#EBE6DC] animate-in fade-in zoom-in-95 duration-200">
+      
+      <div class="flex items-start justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-forest-tint flex items-center justify-center">
+            <svg class="w-7 h-7 text-forest" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.85-.9.04-2.02.61-2.66 1.36-.56.65-1.06 1.71-.93 2.73 1.01.08 2.06-.49 2.67-1.24z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-display font-extrabold text-xl text-[#0A2618]">Pasang Pluvo di iPhone / iPad</h3>
+            <span class="text-xs text-emerald-700 font-semibold">Tersedia via Apple WebClip Profile &amp; Safari PWA</span>
+          </div>
+        </div>
+        <button type="button" onclick="closeIosModal()" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-gray-200">✕</button>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- OPTION A: 1-CLICK WEBCLIP PROFILE DOWNLOAD -->
+        <div class="p-4 rounded-2xl bg-[#E5F8ED] border border-forest/20 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-forest uppercase tracking-wider">Metode 1: Profil WebClip (1-Klik)</span>
+            <span class="text-[10px] bg-forest text-white px-2 py-0.5 rounded-full font-bold">Rekomendasi</span>
+          </div>
+          <p class="text-xs text-[#2A4433] leading-relaxed">
+            Unduh profil konfigurasi resmi Apple WebClip. Setelah diunduh, buka <strong>Settings &gt; Profile Downloaded &gt; Install</strong> di iPhone Anda.
+          </p>
+          <a href="/Pluvo.mobileconfig" download="Pluvo.mobileconfig" class="inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-forest hover:bg-forest-light text-white font-bold text-xs sm:text-sm shadow-sm transition-all">
+            <svg class="w-4 h-4 text-emerald-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Unduh Profil Pluvo (Pluvo.mobileconfig)</span>
+          </a>
+        </div>
+
+        <!-- OPTION B: SAFARI PWA INSTRUCTIONS -->
+        <div class="p-4 rounded-2xl bg-[#FAF9F5] border border-[#EBE6DC] space-y-3">
+          <span class="text-xs font-bold text-[#142116] uppercase tracking-wider block">Metode 2: Tambahkan via Safari</span>
+          
+          <div class="space-y-2.5 text-xs text-[#506053]">
+            <div class="flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-forest text-white font-bold text-[10px] flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+              <span>Buka website ini di <strong>Safari</strong> pada iPhone Anda.</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-forest text-white font-bold text-[10px] flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+              <span>Ketuk tombol <strong>Bagikan (Share)</strong> <svg class="w-4 h-4 inline text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8m-4-6l-4-4m0 0l-4 4m4-4v12"/></svg> di bilah bawah Safari.</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-forest text-white font-bold text-[10px] flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+              <span>Pilih <strong>"Tambahkan ke Layar Utama" (Add to Home Screen)</strong> untuk memasang ikon aplikasi Pluvo.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center pt-2">
+        <button type="button" onclick="closeIosModal()" class="text-xs text-[#68776B] hover:text-forest font-semibold">Tutup</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function openIosModal() {
+      const modal = document.getElementById('iosModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+    function closeIosModal() {
+      const modal = document.getElementById('iosModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  </script>
+
+</body>
+</html>
